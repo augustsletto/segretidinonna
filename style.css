@@ -1,0 +1,584 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+
+
+
+
+body {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a, 
+a:visited,
+
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #427861;
+    color:#427861
+}
+
+
+
+
+#logo  {
+    width: 120px;
+    
+    
+}
+
+.navbar li {
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style-type:none;
+    
+}
+
+.navbar>* {
+    padding: 10px;
+
+}
+
+hr{
+    margin:40px 10% 40px 10%;
+
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background-color: rgba 0, 0, 0, 0.4;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 95px;
+    color:#fff;
+    margin-bottom: 50px;
+}
+
+.content a{
+    font-size: 23px;
+    color:#fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 25px;
+    transition:0.3s;
+}
+
+
+
+.content a:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+.background-clip{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+}
+
+.describe-us{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+em{
+    color:#427861;
+
+}
+
+p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    line-height: 56px;
+    
+}
+#whoweare{
+    font-size: 16px;
+    letter-spacing: .1em !important;
+    line-height: 24px;
+}
+
+.describe-us{
+    padding: 0 10% 0 10%;
+}
+
+.neapolitan {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.napo-text{
+    order:-1;
+}
+
+.napo-text, .roman-text{
+    padding:20px;
+}
+
+.roman{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#roman-two, #napo-top{
+    max-width: 50%;
+    padding:40px;
+}
+
+.neapolitan span, .roman span{
+    text-transform: uppercase;
+}
+
+#go-to-nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin:0 20%;
+}
+
+
+
+
+
+
+footer ul{
+    display:flex;
+    flex-direction:row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-transform: uppercase;
+    
+}
+
+footer .logo{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:30px;
+
+}
+footer h6{
+    font-size: 16px;
+    text-transform:uppercase;
+}
+
+#footer-logo, footer h6{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a:hover{
+    color:#427861
+}
+
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width:100%;
+        height:auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width:auto;
+        height:100%;
+    }
+}
+
+
+
+    
+}
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Oswald', sans-serif; ;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+
+
+  /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+  }
+
+  
+  }
+  .nav-links a {
+    color: #black;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+    position
+  }
+  #logo{
+    align-self: flex-start;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+ 
+  /* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 1008px) {
+   .menu {
+      display:none;
+      position: absolute;
+      background-color:rgba(255, 255, 255, 0.5);
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-top: 61px;
+    }
+  
+    .menu li:hover {
+      display: inline-block;
+
+    }
+  
+    .menu li + li {
+      margin-top: 12px;
+    }
+  
+    input[type=checkbox]:checked ~ .menu {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    
+  
+    
+  }
+
+  footer img{
+    width:100px;
+  }
+
+
+
+  .bakealong{
+    
+    
+
+
+  }
+
+  #titleh1, #titlep{
+    margin: 10px 50px;
+  }
+  #titleh1{
+    font-size: 48px;
+  }
+  .bakealong ul, .bakealong ol{
+    margin-left: 30px;
+  }
+  .bakealong{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    font-size: 24px;
+  }
+    
+  .dough{
+    line-height: 40px;
+  }
+
+  .bakealong li{
+    max-width: 600px;;
+  }
+  .poolish{
+    line-height: 30px;
+  }
+
+  .bakealong img, .bakealong video{
+    width:600px;
+    border-radius: 16px;
+    border: 3px;
+    
+  }
+  .pizza-dough, .tomato-sauce, .poolish{
+    max-width: 800px;
+  }
+
+  .ingredients, .dough{
+    margin-left: -800px;
+
+  }
+
+#sideimages{
+    position:absolute;
+    right: 0px;
+    top:2000px;
+}
+
+.sideimg{
+    width:700px;
+    display:flex;
+    border-radius: 16px;
+    margin: 10px;
+
+
+}
+#youtube-pizza{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    
+
+    margin:100px;
+
+}
+
+#youtube-pizza p{
+    font-size: 28px;
+    
+}
+
+
+#youtube-pizza iframe{
+    margin: 40px;
+    
+    
+}
+
+@media (max-width: 1460px){
+    .ingredients, .dough{
+        margin-left: 0px;
+    
+    
+}
+     #titleh1{
+        font-size: 40px;
+    }
+    #titlep{
+        font-size: 26px;
+        line-height: 36px;
+    }
+    #titleh1, #titlep{
+        margin:20px;
+    }
+}
+
+
+.napo-images img{
+    width:100%;
+    margin: 0 10px 10px 10px;
+    flex-wrap: wrap;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.napo-images{
+    column-count: 1;
+    column-gap: 10px;
+}
+
+@media screen and (min-width: 390px){
+    .napo-images img{
+        width:100%;
+        
+        flex-wrap: wrap;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .napo-images{
+        column-count: 1;
+        column-gap: 10px;
+    }
+    
+    #titlep{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (min-width: 576px){
+    .napo-images img{
+        width:100%;
+        
+        flex-wrap: wrap;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .napo-images{
+        column-count: 1;
+        column-gap: 10px;
+    }
+    
+    #titlep{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .napo-images img{
+        width:100%;
+        margin: 0 10px 10px 10px;
+        flex-wrap: wrap;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .napo-images{
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    #titlep{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+@media screen and (min-width: 992px){
+    .napo-images img{
+        width:100%;
+        margin: 0 10px 10px 10px;
+        flex-wrap: wrap;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .napo-images{
+        column-count: 3;
+        column-gap: 10px;
+    }
+    #titlep{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .napo-images img{
+        width:100%;
+        margin: 0 10px 10px 10px;
+        flex-wrap: wrap;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .napo-images{
+        column-count: 4;
+        column-gap: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #titlep{
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 1024px){
+    header video{
+        display:none;
+    }
+    .content h1{
+        font-size: 95px;
+        color:black;
+        
+    }
+    .container{
+        display:none
+    }
+
+    .menu{
+        background-color: white;
+    }
+}
